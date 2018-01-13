@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::post('/script', ['uses' => 'ScriptController@generate']);
+
+Route::get('/script', ['uses' => 'ScriptController@get']);
